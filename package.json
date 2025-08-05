@@ -5,17 +5,19 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack && http-server -c-1 -p 8081 -o"
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development --open",
+    "start": "webpack serve --mode development --open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "terser-webpack-plugin": "^2.3.5",
-    "ts-loader": "^7.0.1",
-    "typescript": "^3.8.3",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
     "@syncfusion/ej2-grids": "*",
@@ -23,8 +25,8 @@
     "@syncfusion/ej2-calendars": "*",
     "@syncfusion/ej2-inputs": "*",
     "@syncfusion/ej2-dropdowns": "*",
-    "cldr": "^5.6.0",
+    "cldr": "^7.9.0",
     "cldr-data": "^36.0.0",
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1"
   }
 }
