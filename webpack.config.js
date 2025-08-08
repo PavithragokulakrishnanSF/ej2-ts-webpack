@@ -6,22 +6,32 @@ module.exports = {
     entry: path.join(__dirname, '/index.ts'),
     output: {
         filename: 'index.js',
-        path: __dirname
+        path: path.resolve(__dirname, 'dist'),
+        clean: true
     },
-    devtool: false,
+    devtool: 'source-map',
+    devServer: {
+        static: {
+            directory: path.join(__dirname),
+        },
+        compress: true,
+        port: 8081,
+        open: true,
+        hot: true
+    },
     optimization: {
         minimize: false,
-        minimizer: [new TerserPlugin(
-            {parallel: true,}
-        )],
+        minimizer: [new TerserPlugin({
+            parallel: true,
+        })],
         usedExports: true,
     },
-
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
-                loader: 'ts-loader',
+                use: 'ts-loader',
+                exclude: /node_modules/,
             },
         ]
     },
