@@ -1,4 +1,4 @@
-# ej2-ts-webpack
+# Essential JS2 TypeScript Sample with Webpack
 
 This project demonstrates how to build a TypeScript‑based sample application that integrates Syncfusion EJ2 UI components using Webpack as the module bundler. The sample is designed to provide a clear and approachable reference for developers who want to understand how EJ2 components can be used in a plain TypeScript environment without relying on framework‑specific abstractions.
 
