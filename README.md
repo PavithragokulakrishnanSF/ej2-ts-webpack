@@ -1,16 +1,18 @@
 # ej2-ts-webpack
 
-Repository Description: A TypeScript sample showing how to set up Syncfusion EJ2 components with webpack from scratch.
-
-## Project Overview
-
-This project demonstrates creating a TypeScript-based sample application that integrates Syncfusion EJ2 UI components and uses webpack to compile TypeScript into a bundled output. The example includes basic data wiring and a minimal development server for local testing.
+This project demonstrates how to build a TypeScript‑based sample application that integrates Syncfusion EJ2 UI components using Webpack as the module bundler. The sample is designed to provide a clear and approachable reference for developers who want to understand how EJ2 components can be used in a plain TypeScript environment without relying on framework‑specific abstractions.
 
 ## Features
 
-- TypeScript + webpack compilation
-- Example EJ2 component usage (see `datasource.ts` and `index.ts`)
-- Single-file bundle output and `index.html` for static hosting
+- Webpack‑based compilation pipeline for TypeScript source files
+- Example usage of Syncfusion EJ2 UI components with basic data binding
+- Single, optimized JavaScript bundle suitable for static HTML deployment
+- Minimal development server for rapid local iteration
+
+## Prerequisites
+
+- Node.js (LTS recommended)
+- npm or yarn
 
 ## Installation
 
@@ -34,4 +36,3 @@ Start the development server (serves the compiled bundle and opens the page):
 npm run start
 ```
 
-Open the served page (see console output for port) to view the sample.
